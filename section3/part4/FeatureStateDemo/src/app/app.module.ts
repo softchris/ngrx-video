@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { ProductModule } from './products/product.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductModule } from './products/product.module';
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({}),
-    ProductModule
+    ProductModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
